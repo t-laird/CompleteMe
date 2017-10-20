@@ -15,10 +15,11 @@ describe('CompleteMe', function (){
     expect(completeMe.suggest('piz')).to.deep.equal(['pizza']);
   });
 
-  it('Should have an item after using the insert method', function (){
+  it('Should have 235,886 items after using the populate method', function (){
     completeMe.suggestions = [];
     completeMe.populate(dictionary);
     expect(completeMe.count()).to.equal(235886);
+    console.log(completeMe.suggest('app'));
   });
 
 });
