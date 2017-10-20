@@ -15,7 +15,7 @@ describe('CompleteMe', function (){
     expect(completeMe.suggest('piz')).to.deep.equal(['pizza']);
   });
 
-  it.skip('Should have an item after using the insert method', function (){
+  it('Should have an item after using the insert method', function (){
     completeMe.suggestions = [];
     completeMe.populate(dictionary);
     expect(completeMe.count()).to.equal(235886);
