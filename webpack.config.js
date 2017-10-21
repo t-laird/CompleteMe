@@ -1,4 +1,6 @@
 const path = require('path');
+var webpack = require('webpack');
+
 
 module.exports = {
   entry: {
@@ -6,7 +8,9 @@ module.exports = {
   },
   output: {
     path: __dirname,
-    filename: "[name].bundle.js"
+    filename: "[name].bundle.js",
+    libraryTarget: "var",
+    library: "Foo"
   },
   module: {
     noParse: [ /.*(pixi\.js).*/ ],
@@ -27,6 +31,7 @@ module.exports = {
         include: /node_modules\/pixi\.js/
       }
     ]
+    
   },
   resolve: {
     resolveLoader: {
@@ -36,5 +41,15 @@ module.exports = {
   },
   node: {
     fs: 'empty'
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+     })
+  ],
+  externals: {
+    "jquery": "jQuery",
+    "bundle!jquery": "bundledJQuery"
   }
 };
