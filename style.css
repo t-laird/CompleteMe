@@ -3,3 +3,19 @@ input {
   height: 60%;
   font-size: 30px;
 }
+
+ul.ui-autocomplete.ui-menu{
+  font-size: 28px;
+}
+
+ul.ui-autocomplete.ui-menu li:nth-child(odd){
+  background-color: grey;
+}
+ul.ui-autocomplete.ui-menu li:nth-child(even){
+  background-color: darkgray;
+}
+
+ul.ui-autocomplete.ui-menu li:hover{
+  color: white;
+}
+
