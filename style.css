@@ -1,22 +1,144 @@
-input {
+body {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0px auto;
+}
+
+input { 
+  outline: none;
+}
+input.autocomplete {
   width: 80%;
   max-width: 800px;
-  height: 60%;
-  font-size: 30px;
+  font-size: 26px;
+  margin: 0px auto;
+  padding: 10px 15px;
+  border: 1px solid grey;
+  -webkit-box-shadow: 2px 8px 8px -2px rgba(129, 131, 133, 1px 0.708);
+  -moz-box-shadow: 2px 8px 8px -2px rgba(129, 131, 133, 0.708);
+       box-shadow: 2px 8px 8px -2px rgba(129, 131, 133, 0.708);
 }
 
+input.autocomplete:focus{
+  background-color: rgba(184, 206, 240, 0.386);;
+}
+
+input[type="submit"]{
+  width: 25%;
+  height: 50px;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+input[type="submit"]:hover{
+  background-color: rgba(0,10,10,0.1);
+}
+
+input[type="submit"]:focus{
+  background-color: red;
+}
+
+div.submit-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 120px;
+  margin: 15% 0px 0px 0px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.logoBlue{
+  color: #4285F4;
+}
+
+.logoRed{
+  color: #EA4335;
+}
+
+.logoYellow{
+  color: #FBBC05;
+}
+
+.logoGreen{
+  color: #34A853;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  font-size: 35px;
+  text-align: center;
+  margin: 0px;
+}
+
+h5{
+  text-align: center;
+}
 ul.ui-autocomplete.ui-menu{
   font-size: 28px;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-ul.ui-autocomplete.ui-menu li:nth-child(odd){
-  background-color: grey;
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 15px;
 }
-ul.ui-autocomplete.ui-menu li:nth-child(even){
-  background-color: darkgray;
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
-ul.ui-autocomplete.ui-menu li:hover{
-  color: white;
+ul.ui-autocomplete.ui-menu li{
+  background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
 }
 
+.ui-autocomplete-term { 
+  font-weight: bold;
+ }
+
+ 
+ .ui-state-focus
+ {
+   color:White;
+   background:#96B202;
+   outline:none;
+  }
+  ul.ui-autocomplete.ui-menu li:hover{
+    background-color: lightgray;
+  }
+
+  ul.ui-autocomplete.ui-menu li.focus {
+    background-color: lightgray;
+  }
+
+
+.wordHolder {
+  margin: 0px auto;
+}
+
+.wordHolder span {
+  font-size: 150px;
+  margin-right: 5px;
+}
+
+h3.endgame-message {
+  font-size: 50px;
+}
