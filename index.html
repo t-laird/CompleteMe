@@ -2,13 +2,28 @@
 
 <html>
   <head>
-    <title> Complete Me </title>
+    <title> Complete Me - Thomas Laird</title>
     <link href="./style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <h1>Starter Page for Complete Me Project</h1>
+    <h1>
+      <span class=logoBlue>W</span><span class=logoRed>O</span><span class=logoYellow>O</span><span class=logoBlue>G</span><span class=logoGreen>L</span><span class=logoRed>E </span></h1> <br>
+    <h3>Use the Autocomplete Field to Find the Missing Word!</h3>
+    <h5>(No searching here... maybe you were looking for <a href="http://www.bing.com" target="_blank">Google?</a>)</h5>
+
     <input type="text" class="autocomplete">
-    <input type="submit" class="select" value="Select Word">
+    <div class="submit-container">
+      <input type="submit" class="select" value="Select Word">
+      <input type="submit" class="reset" value="New Game">
+    </div>
+
+    <h2>Total Score: <span class="total-points">0</span></h2>
+    <h3>Score over 2,500 Points for a Prize</h3>
+    <h3 class="endgame-message"></h3>
+    <div class="wordHolder">
+    </div>
+
+    <div class="beatScore"></div>
     
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
