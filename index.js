@@ -1,8 +1,8 @@
 import Trie from './Trie.js';
-import $ from 'jquery';
-global.jQuery = require('jquery');
-require('webpack-jquery-ui/autocomplete');
-require('webpack-jquery-ui');
+// import $ from 'jquery';
+// global.jQuery = require('jquery');
+// require('webpack-jquery-ui/autocomplete');
+// require('webpack-jquery-ui');
 
 // const text = "../dictionary/web2";
 // let autoComplete = new Trie();
