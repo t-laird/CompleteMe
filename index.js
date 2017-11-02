@@ -1,4 +1,4 @@
-import Trie from './Trie.js';
+const Trie = require('./lib/Trie.js');
 // import $ from 'jquery';
 // global.jQuery = require('jquery');
 // require('webpack-jquery-ui/autocomplete');
