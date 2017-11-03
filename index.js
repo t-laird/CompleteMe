@@ -1,4 +1,4 @@
-import Trie from './lib/Trie';
+const Trie = require('./lib/Trie');
 
 
 module.exports = Trie;
